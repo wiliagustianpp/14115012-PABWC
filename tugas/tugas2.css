@@ -1,0 +1,28 @@
+body{
+	background: ##006400;
+	font-family: roboto;
+	text-align: center;
+}
+
+h1{
+	color: #fff;
+}
+
+.ketengah{
+	margin: 50px auto;
+	width: 500px;
+}
+
+.kotak{
+	background: orange;
+	width: 500px;
+	float: left;
+	height: 100px;
+	margin: 15px;
+}
+.gradient {
+	background: linear-gradient(blue, yellow);
+	background: -webkit-linear-gradient(blue, yellow);
+	background: -o-linear-gradient(blue, yellow);
+	background: -moz-linear-gradient(blue, yellow);
+}
