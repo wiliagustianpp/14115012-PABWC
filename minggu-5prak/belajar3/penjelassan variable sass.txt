@@ -1,0 +1,1 @@
+pada pembuatan SASS diawali dengan simbol $, kemudian diikuti dengan nama variable. SASS digunakan untuk menyimpan nilai, nilai itu dapat berupa properti, teks. ukuran elemen, url gambar dan lainnya.
