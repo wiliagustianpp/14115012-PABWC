@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Data Mahasiswa</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="form-group" style="margin-left: 50px;">
+<h2>Tambah Data</h2><br>
+<form action="tambahData.php" method="POST">
+	<b>NRP: </b>
+	<input type="text" name="nrp" class="form-control" style="width: 300px;">
+	<b>Nama: </b>
+	<input type="text" name="nama" class="form-control" style="width: 300px;">
+	<b>Foto: </b>
+	<div class="input-group mb-3">
+  		<div class="input-group-prepend">
+    		<span class="input-group-text">Upload</span>
+  		</div>
+  		<div class="custom-file">
+    		<input type="file" class="custom-file-input" id="inputGroupFile01" name="foto" style="width: 300px;">
+    		<label class="custom-file-label" for="inputGroupFile01" style="width: 300px;">Choose file</label>
+  		</div>
+	</div>
+
+	<b>Jurusan: </b><br>
+	<select class="custom-select" name="jurusan" style="width: 300px;">
+		<option>Informatika</option>
+		<option>Elektro</option>
+		<option>Geomatika</option>
+		<option>Geofisika</option>
+	</select><br><br>
+	<input type="submit" name="simpan" class="btn btn-primary">
+	<input type="reset" name="reset" class="btn btn-primary">
+</div>
+</form>
+
+<hr>
+
+<div class="form-group" style="margin-left: 50px;">
+	<h2>Search Data</h2><br>
+	<form action="cari.php" method="POST">
+		<b>Nama: </b>
+		<input type="search" name="cari" class="form-control" style="width: 300px;">
+		<input type="submit" name="search" class="btn btn-primary" value="Cari">
+	</form>
+</div>
+
+<hr>
+
+<div class="form-group" style="margin-left: 50px;">
+	<h2>Hapus Data</h2>
+	<form method="POST" action="delete.php">
+		<b>NRP: </b>
+		<input type="text" name="delete" class="form-control" style="width: 300px;">
+		<input type="submit" name="hapus" class="btn btn-primary" value="Hapus">
+	</form>
+</div>
+</body>
+</html>
